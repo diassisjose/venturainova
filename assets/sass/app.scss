@@ -1,0 +1,185 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 72px;
+}
+h2 {
+  font-size: 54px;
+  font-weight: 800;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 900;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none !important;
+}
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.curve-one-a {
+  background: var(--white);
+  position: relative;
+  width: 100%;
+}
+.curve-one-b {
+  background: var(--grey-light);
+  position: relative;
+  width: 100%;
+}
+#curve-one {
+  position: absolute;
+  bottom: 0;
+}
+#curve-one path {
+  fill: var(--grey-light);
+}
+
+.curve-two-a {
+  background: var(--grey-light);
+  position: relative;
+  width: 100%;
+}
+.curve-two-b {
+  background: var(--white);
+  position: relative;
+  width: 100%;
+}
+#curve-two {
+  position: absolute;
+  bottom: 0;
+}
+#curve-two path {
+  fill: var(--white);
+}
+
+.curve-section-one-a {
+  background: var(--grey-light);
+  position: relative;
+  width: 100%;
+}
+.curve-section-one-b {
+  background: var(--white);
+  position: relative;
+  width: 100%;
+}
+#curve-section-one {
+  position: absolute;
+  bottom: 0;
+}
+#curve-section-one path {
+  fill: var(--primary);
+}
+
+.curve-section-two-a {
+  background: var(--primary);
+  position: relative;
+  width: 100%;
+}
+.curve-section-two-b {
+  background: var(--grey-light);
+  position: relative;
+  width: 100%;
+}
+#curve-section-two {
+  position: absolute;
+  bottom: 0;
+}
+#curve-section-two path {
+  fill: var(--white)
+}
+.p-head {
+  font-size: 18px;
+}
+
+.full {
+  height: 100vh;
+}
+
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: center;
+    margin-top: 0px;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+  }
+  .p-head {
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 20px;
+  }
+  .sm-center {
+    align-items: center;
+    text-align: center;
+  }
+  .ptMobi {
+    margin-top: -25px;
+  }
+  .full {
+    height: 80%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  
+}
+
+@media screen and (min-width: 1400px) {
+  .pt-head {
+    padding-top: 15%;
+  }
+}
+
+// Cards
+.card {
+  background-color: #ffffff00;
+}
+
+.card1 {
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+}
+.card2 {
+  background-image: linear-gradient(var(--green), var(--blue));
+}
+.card3 {
+  background-image: linear-gradient(var(--primary), var(--primary-light));
+}
+.card4 {
+  background-image: linear-gradient(var(--pink), var(--danger));
+}
+.card5 {
+  background-image: linear-gradient(var(--primary), var(--blue-light));
+}
+
+.bg-header1 {
+  background-image: url("/bg-design-thinking.webp");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
